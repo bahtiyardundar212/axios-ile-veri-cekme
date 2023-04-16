@@ -34,16 +34,17 @@ function Post () {
             pdata === "posts" && (
             posts.map((post,index) => {
               return(
-                <>
-                <h1 key={index}><u>post numarası {post.id}</u></h1>
+                
 
                 <div key={index}>
+                <h1><u>post numarası {post.id}</u></h1>
+
                   <h3>{post.userId}</h3>
                   <h3>{post.id}</h3>
                   <h3>{post.title}</h3>
                   <h3>{post.body}</h3>
                 </div>
-                </>
+                
               )
             }))
           }

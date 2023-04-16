@@ -73,17 +73,17 @@ function App() {
        showUser && (
           users.map((user,index) => {
             return(
-              <>
-              <h1><u>users {user.id}</u></h1>
+              
               <div key={index}>
+              <h1><u>users {user.id}</u></h1>
+
                 <h3> {user.name} </h3>
                 <h3> {user.username} </h3>
                 <h3> {user.phone} </h3>
                 <h3> {user.email} </h3>
                 <h3> {user.address.suite} </h3>
-
               </div>
-              </>
+              
             )
           }))  
       }
